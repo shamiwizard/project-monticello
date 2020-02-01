@@ -1,9 +1,11 @@
 $(document).ready(function(){
 
-    $('.news-owl').owlCarousel({
-        loop:true,
+    var newsOwl = $('.news-owl');
+
+    newsOwl.owlCarousel({
         margin:30,
         nav:true,
+        loop:true,
         dots:true,
         responsive:{
             0:{
@@ -16,6 +18,12 @@ $(document).ready(function(){
                 items:3
             }
         }
-    })
+    });
+    $('.news .prev').on("click", function() {
+        newsOwl.trigger('prev.owl.carousel');
+    });
+    $('.news .next').on("click", function() {
+        newsOwl.trigger('next.owl.carousel');
+    });
 
 });
