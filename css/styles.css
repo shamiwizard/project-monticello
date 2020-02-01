@@ -1,0 +1,69 @@
+* {
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Gotham";
+}
+
+/* .header {
+    background-image: url(../img/headerBackgr.png);
+} */
+
+.nav-item .nav-link {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Gotham";
+}
+
+
+.nav-menu-item::before {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    margin-right: 7px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+}
+
+.nav-menu-item.active::before {
+    background-color: #fff;
+}
+
+.nav-item {
+    padding: 0 15px;
+}
+
+.head {
+    height: 100vh;
+    background-image: url(../img/headerBackgr.png);
+}
+
+.container-head {
+    color: #fff;
+}
+
+.container-head h1 {
+    font-size: 80px;
+    letter-spacing: 4px;
+    color: #ffffff;
+    font-family: "Gotham";
+    font-weight: bold;
+}
+
+.container-head p {
+    width: 834px;
+    height: 24px;
+    font-size: 18px;
+    letter-spacing: 5px;
+    color: #ffffff;
+    font-family: "Gotham";
+    text-align: center;
+}
