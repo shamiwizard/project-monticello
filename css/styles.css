@@ -9,18 +9,20 @@
     font-family: "Gotham";
 }
 
-.header {
+/* .header {
     background-image: url(../img/headerBackgr.png);
-}
+} */
 
 .nav-item .nav-link {
+    text-transform: uppercase;
     display: inline-block;
     font-size: 14px;
     color: #ffffff;
     font-family: "Gotham";
 }
 
-.nav-item::before {
+
+.nav-menu-item::before {
     content: " ";
     display: inline-block;
     position: relative;
@@ -31,10 +33,37 @@
     height: 10px;
 }
 
-.nav-item.active::before {
+.nav-menu-item.active::before {
     background-color: #fff;
 }
 
 .nav-item {
     padding: 0 15px;
+}
+
+.head {
+    height: 100vh;
+    background-image: url(../img/headerBackgr.png);
+}
+
+.container-head {
+    color: #fff;
+}
+
+.container-head h1 {
+    font-size: 80px;
+    letter-spacing: 4px;
+    color: #ffffff;
+    font-family: "Gotham";
+    font-weight: bold;
+}
+
+.container-head p {
+    width: 834px;
+    height: 24px;
+    font-size: 18px;
+    letter-spacing: 5px;
+    color: #ffffff;
+    font-family: "Gotham";
+    text-align: center;
 }
